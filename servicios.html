@@ -1,26 +1,63 @@
-<main style="padding: 4rem 5%; max-width: 1200px; margin: auto;">
-        <h1 style="color: var(--accent-color); text-align: center; margin-bottom: 2rem;">Catálogo de Servicios</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - SecurIT Consulting</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <strong style="font-family: var(--font-mono); color: var(--accent-color); font-size: 1.5rem;">> SecurIT_</strong>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html" style="color: var(--accent-color);">Servicios</a></li>
+                <li><a href="nosotros.html">Firma</a></li>
+                <li><a href="equipo.html">Expertos</a></li>
+                <li><a href="recursos.html">Casos de Éxito</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacto.html">Solicitar Auditoría</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="services-container">
+        <h1 class="services-title">> Catálogo_de_Servicios</h1>
         
-        <div style="display: flex; flex-direction: column; gap: 20px;">
-            <section class="info-card" style="display: flex; gap: 20px; align-items: center;">
-                <div style="flex: 1;">
-                    <h3 style="color: var(--accent-color);">Pentesting (Caja Blanca/Negra)</h3>
+        <div class="services-grid">
+            <section class="info-card">
+                <div class="card-body">
+                    <h3>Pentesting (Caja Blanca/Negra)</h3>
                     <p>Simulamos ataques del mundo real para descubrir vulnerabilidades en sus aplicaciones web, móviles y APIs antes de que los cibercriminales lo hagan.</p>
                 </div>
             </section>
 
-            <section class="info-card" style="display: flex; gap: 20px; align-items: center;">
-                <div style="flex: 1;">
-                    <h3 style="color: var(--accent-color);">Centro de Operaciones de Seguridad (SOC as a Service)</h3>
+            <section class="info-card">
+                <div class="card-body">
+                    <h3>Centro de Operaciones de Seguridad (SOC as a Service)</h3>
                     <p>Monitoreo continuo 24/7 de su red, análisis de logs y detección de anomalías mediante Inteligencia Artificial.</p>
                 </div>
             </section>
 
-            <section class="info-card" style="display: flex; gap: 20px; align-items: center;">
-                <div style="flex: 1;">
-                    <h3 style="color: var(--accent-color);">Auditoría de Cumplimiento</h3>
+            <section class="info-card">
+                <div class="card-body">
+                    <h3>Auditoría de Cumplimiento</h3>
                     <p>Evaluamos su infraestructura para asegurar el cumplimiento con normativas internacionales (GDPR, HIPAA, PCI-DSS).</p>
                 </div>
             </section>
         </div>
     </main>
+
+    <footer>
+        <p>&copy; 2026 SecurIT Consulting. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

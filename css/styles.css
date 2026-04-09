@@ -66,4 +66,156 @@ footer {
     color: var(--text-muted);
     font-size: 0.9rem;
 }
+ 
+/* --- Estilos para Secciones de Contenido nodtrosssss --- */
+.services-container {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.info-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--bg-card);
+    border: 1px solid rgba(0, 255, 163, 0.1);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateX(10px);
+    border-color: var(--accent-color);
+}
+
+.info-card h3 {
+    color: var(--accent-color);
+    font-family: var(--font-mono);
+    margin-top: 0;
+}
+
+/* --- Estilos para la Página de Equipo --- */
+.expert-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(0, 255, 163, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.expert-card:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 20px rgba(0, 255, 163, 0.1);
+    transform: translateY(-5px);
+}
+
+.expert-avatar {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.expert-role {
+    color: var(--accent-color);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* --- Estilos para FAQ --- */
+.faq-container {
+    padding: 4rem 5%;
+    max-width: 800px;
+    margin: auto;
+    min-height: 60vh;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border: 1px solid rgba(0, 255, 163, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.faq-item[open] {
+    border-color: var(--accent-color);
+}
+
+.faq-item summary {
+    color: var(--accent-color);
+    font-family: var(--font-mono);
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    list-style: none; /* Quita la flecha por defecto en algunos navegadores */
+}
+
+.faq-item summary::before {
+    content: "> ";
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 10px;
+}
+
+/* --- Estilos para la Página de Servicios --- */
+.services-container {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services-title {
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: var(--font-mono);
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Estilización de las Cards de Servicio */
+.info-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    background-color: var(--bg-card);
+    border: 1px solid rgba(0, 255, 163, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: scale(1.02);
+    border-color: var(--accent-color);
+    box-shadow: 0 5px 15px rgba(0, 255, 163, 0.05);
+}
+
+.info-card h3 {
+    color: var(--accent-color);
+    font-family: var(--font-mono);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: var(--text-muted);
+    margin-bottom: 0;
+    line-height: 1.7;
+}
 

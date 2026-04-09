@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos de Éxito - SecurIT</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Ajustes para el tema oscuro en los componentes de Bootstrap */
+        .modal-content {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            border: 1px solid var(--accent-color);
+        }
+        .modal-header {
+            border-bottom: 1px solid rgba(0, 255, 163, 0.2);
+        }
+        .modal-footer {
+            border-top: 1px solid rgba(0, 255, 163, 0.2);
+        }
+        .btn-close {
+            filter: invert(1) grayscale(100%) brightness(200%);
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <nav>
+            <div class="logo">
+                <strong style="font-family: var(--font-mono); color: var(--accent-color); font-size: 1.5rem;">> SecurIT_</strong>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Firma</a></li>
+                <li><a href="equipo.html">Expertos</a></li>
+                <li><a href="recursos.html" style="color: var(--accent-color);">Casos de Éxito</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacto.html">Solicitar Auditoría</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="mb-4 text-center" style="font-family: var(--font-mono); color: var(--accent-color);">> Archivos_Desclasificados</h1>
+        <p class="text-center mb-5" style="color: var(--text-muted);">Auditorías recientes y resoluciones de incidentes críticos.</p>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100" style="background-color: var(--bg-card); border: 1px solid rgba(0, 255, 163, 0.2);">
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #dc3545;">Respuesta a Incidentes</span>
+                        <h5 class="card-title text-white">Brecha en FinTech X</h5>
+                        <p class="card-text" style="color: var(--text-muted);">Contención de ataque Ransomware en menos de 4 horas, evitando la fuga de 2M de registros.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <button type="button" class="btn btn-sm w-100" style="background-color: transparent; border: 1px solid var(--accent-color); color: var(--accent-color);" data-bs-toggle="modal" data-bs-target="#modalCaso1">
+                            Ver Reporte
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100" style="background-color: var(--bg-card); border: 1px solid rgba(0, 255, 163, 0.2);">
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #0d6efd;">Pentesting Web</span>
+                        <h5 class="card-title text-white">Plataforma E-commerce Zero</h5>
+                        <p class="card-text" style="color: var(--text-muted);">Detección de vulnerabilidades de inyección SQL (Zero-Day) antes del Black Friday.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <button type="button" class="btn btn-sm w-100" style="background-color: transparent; border: 1px solid var(--accent-color); color: var(--accent-color);" data-bs-toggle="modal" data-bs-target="#modalCaso2">
+                            Ver Reporte
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100" style="background-color: var(--bg-card); border: 1px solid rgba(0, 255, 163, 0.2);">
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #198754;">Auditoría de Red</span>
+                        <h5 class="card-title text-white">Hospital Central</h5>
+                        <p class="card-text" style="color: var(--text-muted);">Aseguramiento de infraestructura crítica médica contra ataques de denegación de servicio (DDoS).</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <button type="button" class="btn btn-sm w-100" style="background-color: transparent; border: 1px solid var(--accent-color); color: var(--accent-color);" data-bs-toggle="modal" data-bs-target="#modalCaso3">
+                            Ver Reporte
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="modalCaso1" tabindex="-1" aria-labelledby="modalCaso1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-white" id="modalCaso1Label">Reporte: FinTech X</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="color: var(--text-muted);">
+                    <p><strong>Vector de ataque:</strong> Phishing dirigido a ejecutivos (Spear Phishing).</p>
+                    <p><strong>Acción de SecurIT:</strong> Aislamiento de la red afectada, análisis forense de los servidores comprometidos y parcheo de credenciales expuestas.</p>
+                    <p><strong>Resultado:</strong> 100% de los datos recuperados sin pagar rescate.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCaso2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5 text-white">Reporte: E-commerce Zero</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body" style="color: var(--text-muted);"><p>Aseguramiento de pasarela de pago y parcheo de inyección SQL en la base de datos de usuarios.</p></div></div></div>
+    </div>
+    <div class="modal fade" id="modalCaso3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5 text-white">Reporte: Hospital Central</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body" style="color: var(--text-muted);"><p>Segmentación de red IoT médica y configuración de firewalls de próxima generación.</p></div></div></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SecurIT Consulting. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

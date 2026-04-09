@@ -1,32 +1,43 @@
-# CyberGuard Solutions - Solemne 01
+# SecurIT Consulting - Solemne 01 Práctico
 
 ## 👥 Integrantes
-* Constanza Araya
-* Andrés Leiva
+* **Constanza Araya**
+* **Andrés Leiva**
 
 ## 📄 Descripción del Proyecto
-Micrositio corporativo desarrollado para **CyberGuard Solutions**, una firma ficticia especializada en consultoría de ciberseguridad. El sitio presenta un diseño moderno (Dark Mode tecnológico), manteniendo coherencia visual en todas sus vistas mediante el uso de CSS nativo organizado. El proyecto cumple con la lógica de diseño responsivo y la integración de componentes de Bootstrap 5 en áreas interactivas.
+Este proyecto consiste en un sitio web corporativo para **SecurIT Consulting**, una firma especializada en ciberseguridad y auditoría técnica. El diseño sigue una estética "Cyberpunk/Dark Mode" utilizando una paleta de colores basada en negro profundo y verde neón. 
 
-## 🗺️ Listado de Páginas (7 Vistas)
-1. `index.html` - Inicio y presentación general.
-2. `nosotros.html` - Descripción de la firma y metodología.
-3. `servicios.html` - Catálogo de servicios de seguridad.
-4. `equipo.html` - Perfiles de nuestros expertos.
-5. `recursos.html` - Casos de éxito y resoluciones (Desarrollado con **Bootstrap**).
-6. `contacto.html` - Formulario de solicitud de auditoría (Desarrollado con **Bootstrap**).
-7. `faq.html` - Preguntas frecuentes (Uso de HTML5 semántico con `<details>`).
+El sitio es multipágina y ha sido construido siguiendo los estándares de **HTML5 semántico**, **CSS3 avanzado** y la integración estratégica de **Bootstrap 5**.
 
-## 🧩 Componentes Principales de Interfaz Utilizados
-Siguiendo la clasificación vista en clases, se implementaron los siguientes componentes:
-* **Navegación:** Menú principal (Navbar) coherente en las 7 páginas.
-* **Contenido:** Cards (`.card` de Bootstrap en Recursos y `.info-card` nativo en el resto), Acordeones nativos HTML5 (`<details>` en FAQ).
-* **Interacción:** Formulario de contacto (`.form-control`, `.form-select`), Modales emergentes (`.modal` en Casos de Éxito), Botones (`.btn`).
-* **Feedback:** Alertas visuales (`.alert` en Contacto), Badges identificadores (`.badge` en Recursos), validaciones visuales de enlaces activos (`:hover` y `.active`).
+## 🗺️ Estructura del Sitio (7 Páginas)
+El proyecto consta de las siguientes vistas, todas conectadas mediante un menú de navegación consistente:
 
-## 🐳 Instrucciones para Ejecutar con Docker
-Este proyecto está preparado para desplegarse fácilmente usando un contenedor Nginx. 
-Para levantar el sitio en un entorno local, ejecutar en la terminal desde la raíz del proyecto:
+1.  **Inicio (`index.html`):** Presentación de la propuesta de valor y landing principal.
+2.  **Servicios (`servicios.html`):** Catálogo detallado de servicios (Pentesting, SOC, Auditoría).
+3.  **Firma (`nosotros.html`):** Descripción detallada de la institución y su filosofía.
+4.  **Expertos (`equipo.html`):** Presentación del equipo técnico (Implementado con **Bootstrap 5**).
+5.  **Casos de Éxito (`recursos.html`):** Portafolio de proyectos anteriores con uso de **Modales de Bootstrap**.
+6.  **FAQ (`faq.html`):** Preguntas frecuentes utilizando etiquetas semánticas `<details>` y `<summary>`.
+7.  **Contacto (`contacto.html`):** Formulario de solicitud de auditoría (Implementado con **Bootstrap 5**).
 
-1. Construir la imagen de Docker:
+## 🧩 Componentes de Interfaz Utilizados
+Siguiendo los criterios de evaluación, se han implementado:
+* **Navegación:** Navbar coherente en todas las páginas con estados `:hover`.
+* **Contenido:** Cards personalizadas (`.info-card`) y sistema de rejilla (Grid).
+* **Interacción:** Modales interactivos en la página de Recursos.
+* **Formularios:** Validación visual en el formulario de contacto.
+* **Semántica:** Uso estricto de `<header>`, `<main>`, `<footer>`, `<section>` y `<article>`.
+
+## 🛠️ Tecnologías y Metodologías
+* **HTML5 / CSS3:** Uso de variables CSS (`:root`), Flexbox y Grid Layout.
+* **Bootstrap 5:** Aplicado específicamente en 2 páginas requeridas para componentes complejos.
+* **Docker:** Containerización mediante imagen base de Nginx.
+* **Git/GitHub:** Control de versiones con mensajes de commit significativos.
+
+## 🐳 Instrucciones de Ejecución
+Para levantar el proyecto localmente utilizando Docker, sigue estos pasos:
+
+1. Asegúrate de estar en la carpeta raíz del proyecto (donde está el `Dockerfile`).
+2. Construye la imagen:
    ```bash
-   docker build -t cyberguard-web .
+   docker build -t securit-web .

@@ -33,7 +33,3 @@ Siguiendo los criterios de evaluación, se han implementado:
 * **Bootstrap 5:** Aplicado específicamente en 2 páginas requeridas para componentes complejos.
 * **Docker:** Containerización mediante imagen base de Nginx.
 * **Git/GitHub:** Control de versiones con mensajes de commit significativos.
-1. Asegúrate de estar en la carpeta raíz del proyecto (donde está el `Dockerfile`).
-2. Construye la imagen:
-   ```bash
-   docker build -t securit-web .

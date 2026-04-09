@@ -1,13 +1,12 @@
-/* css/styles.css */
+/* Variables Globales para Coherencia Visual [cite: 58, 59, 60] */
 :root {
-    --bg-main: #0B0F19;
-    --bg-card: #1A2235;
-    --text-main: #E2E8F0;
-    --text-muted: #94A3B8;
-    --accent-color: #00FFA3;
-    --accent-hover: #00CC82;
-    --font-sans: 'Inter', system-ui, sans-serif;
+    --bg-main: #0a0b10;
+    --bg-card: #15171e;
+    --accent-color: #00ffa3;
+    --text-main: #e0e0e0;
+    --text-muted: #8892b0;
     --font-mono: 'Fira Code', monospace;
+    --font-sans: 'Inter', sans-serif;
 }
 
 body {
@@ -15,53 +14,73 @@ body {
     color: var(--text-main);
     font-family: var(--font-sans);
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    line-height: 1.6;
 }
 
-/* Estructura básica de Navegación */
+/* Layout de Navegación */
 header {
-    background-color: var(--bg-card);
-    padding: 1rem 2rem;
     border-bottom: 1px solid rgba(0, 255, 163, 0.2);
+    padding: 1rem 5%;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
-    list-style: none;
+header ul {
     display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
+    list-style: none;
+    gap: 20px;
 }
 
-nav a {
-    color: var(--text-main);
+header a {
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: var(--text-main);
+    transition: 0.3s;
 }
 
-nav a:hover {
+header a:hover {
     color: var(--accent-color);
 }
 
-main {
-    flex: 1; /* Esto empuja el footer hacia abajo */
-    padding: 2rem;
+/* Estilos de Contenido */
+.container-custom {
+    padding: 80px 10%;
+}
+
+.terminal-title {
+    font-family: var(--font-mono);
+    color: var(--accent-color);
+}
+
+.text-muted {
+    color: var(--text-muted);
+    max-width: 800px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 10%;
+    background-color: var(--bg-card);
+}
+
+.cyber-card {
+    border-left: 3px solid var(--accent-color);
+    padding: 20px;
+    background: rgba(0, 255, 163, 0.03);
+}
+
+.card-title {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
 }
 
 footer {
-    background-color: var(--bg-card);
     text-align: center;
-    padding: 1rem;
-    border-top: 1px solid rgba(0, 255, 163, 0.2);
+    padding: 2rem;
     color: var(--text-muted);
 }
